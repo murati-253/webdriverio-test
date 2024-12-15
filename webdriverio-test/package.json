@@ -1,15 +1,19 @@
 {
   "name": "webdriverio-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "main": "wdio.conf.js",
   "devDependencies": {
-    "@wdio/cli": "^9.4.1"
+    "@wdio/local-runner": "^9.4.1",
+    "@wdio/mocha-framework": "^9.2.8",
+    "@wdio/selenium-standalone-service": "^8.14.0",
+    "@wdio/spec-reporter": "^9.2.14",
+    "@wdio/sync": "^7.14.1",
+    "@wdio/types": "^9.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "webdriverio": "^9.4.2"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.ts"
   }
 }
